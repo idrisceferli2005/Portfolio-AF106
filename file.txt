@@ -1,0 +1,31 @@
+pwd-oldugumuz directini gosterir
+ls-oldugum yerde hansi fayllar ve folderlerin oldugunu gosterir
+cd-folderlere kecid
+mkdir-folder yaradir
+touch-fayl yaradir
+vim faylname + insert + escape + :wq- faylin icine yazi yazir
+cd../- folderden bir evvele cixir
+cd../../- folderden iki evvele cixir
+cd desktop/foldername- ic-ice folderlere gedir
+clear- terminali temizleyir
+rm-fayli silir
+rmdir-folderi silir
+rm-r foldername- folderi icindeki fayl ile birlikde silir
+git log- deyisikliklerin siyahasi
+git status- hazirlanib amma githuba qoyulmayan fayllari gosterir
+git branch- butub brachlari gosterir
+git branch branchname- yeni branch yaradir
+git checkout branchname- basqa brancha kecir
+git merge branchname- branchi birlesdirir
+git reset- melumatlari silmeden ve yeni commit yaratmadan deyisiklikleri geri alir
+git tag- commitleri etiketleyir
+git stash- kecici olaraq yaddasda saxlayir
+git add .- yeni ve deyismis folderin hamisini yenileme siyahasina elave edir
+git add-u- silinmis ve deyisdirilmis fayllari yenileme siyahasina elave edin
+git diff- deyisiklikler arasindaki ferqleri gosterir
+git clone <adres>- uzaqdaki deponu klonlayir
+git greb- soz ve ya ifadeni axtarma
+git stash drop- kommit edilmemis deyisiklikleri silir
+git stash list- kommit edilmemis deyisiklikleri siyahiya alir
+git stash pop- kommit edilmemis deyiskliklere geri qayidir
+git stash save- kommit edilmemis deyisiklikleri yadda saxlayar
