@@ -36,14 +36,15 @@
 //     console.log (c)
 // }
 
-//Verilmish sozu tersine yazan algorithm;
-// let word= "Day";
-// let reverseword= "";
-// for(let i = word.lenght-1; i>=0; i--) {
-// reverseword += word[i];
-// console.log(reverseword);
-// }
+// Verilmish sozu tersine yazan algorithm;
+let word = "Day";
+let reverseword = "";
+for (let i = word.length - 1; i >= 0; i--) {
+    reverseword += word[i];
+    console.log(reverseword);
+}
 
+ 
 
 
 
