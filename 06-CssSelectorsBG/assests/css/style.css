@@ -1,0 +1,37 @@
+.box{
+   background-color: white;
+   text-align: center;
+  }
+  .form{
+    text-align: center;
+    background-color: grey;
+  }
+  .foot{
+    border: 2px solid black;
+    padding: 20px;
+    
+    text-align: left;
+    color: black;
+    padding-top: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    height: 100vh;
+    background-image: url(../images/062623_CG_Megalodon_feat.webp);
+background-size: cover;
+}
+.hero{
+    height: 100vh;
+    background: url(../images/1466613055_hi8qqos.jpg) no-repeat center / contain scroll; 
+}
+#nav{
+    height: 100vh;
+    overflow: scroll;
+    background: url(../images/1260096090_5.jpg)  no-repeat;
+    
+   
+}
+.div{
+    border: 10px solid black;
+    padding: 20px;
+}
+

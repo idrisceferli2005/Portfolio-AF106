@@ -1,0 +1,85 @@
+/* h1 elementlerin rengini deyisir */
+h1{
+    color: navy;
+}
+/* elementi hedefleyir */
+#header{
+    text-align: center;
+    font-size: medium;
+}
+/* arxa fonu deyisir */
+.highlight{
+    background-color: aqua;
+}
+/* butun elementlere aiddir margin verir */
+* {
+    margin: 20px;
+}
+/* yalniz hrefe aiddir */
+[href] {
+    color: yellow;
+}
+/* yalniz buton tipliinput elementleri stil edir */
+input[type="button"] {
+    background-color: aqua;
+}
+/* yalniz ul li elementleri hedefleyir */
+ul > li {
+    font-size: 10px;
+}
+/* div icindeki p elementleri hedefleyir */
+div p {
+    font-size: 12px;
+}
+/* p elementinden sonra gelen ilk h2 elementini hedefleyir */
+p + h2 {
+    color: beige;
+}
+/* h2 ile eyni seviyyede olan butun p elementleri hedefleyir */
+h2 ~ p {
+    font-style: italic;
+}
+/* link rengini deyisdirir */
+a:hover {
+    color: blueviolet;
+}
+/* 1-ci paraqraf elementini hedefleyir */
+p:first-child {
+    font-weight: bold;
+}
+/* sonuncu li elementini hedefleyir */
+li:last-child {
+    color: yellowgreen;
+}
+/* her ucuncu p elementini hedefleyir */
+p:nth-of-type(3) {
+    background-color: burlywood;
+}
+/* her  2 ci li elementini hedefleyir */
+li:nth-child(2) {
+    font-size: 20px;
+}
+/* bos elementleri hedefleyir */
+p:empty {
+    border: 1px solid gray;
+}
+/* fokus olunan input elementleri stil edir */
+input:focus {
+    border: 2px;
+}
+/* her p elementin evveline mezmun elave edir */
+p::before {
+    content: ">>";
+    color: aliceblue;
+}
+/* p elementin sonuna mezmun elave edir */
+p::after {
+    content: "<<";
+    color: black;
+}
+/* highlight olmayan butun p elementleri hedefleyir */
+p:not(.highlight) {
+    color: turquoise;
+}
+
+
