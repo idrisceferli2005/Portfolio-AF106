@@ -1,0 +1,48 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: content-box;
+
+}
+body {
+    height: 100vh;
+    background-color: white;
+   
+}
+.hero1{
+    border: 5px solid;
+ border-image: linear-gradient( to right, limegreen, cyan);
+      border-image-slice: 1;
+     padding: 50px;
+     width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+.hero2{
+    border-width: 5px 0;
+    border-style: solid;
+    border-image: linear-gradient( to right, limegreen, cyan) 1;
+    padding: 20px;
+    width: 200px;
+    margin: 30px;
+}
+.hero3{
+    border-width: 0 5px;
+    border-style: solid;
+    border-image: linear-gradient( to right, limegreen, cyan) 1 ;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    margin: 50px;
+}
+.hero4{
+   border: 5px solid;
+   border-image: linear-gradient( to left, limegreen, cyan)1;
+   padding: 20px;
+   width: 200px;
+   text-align: center;
+   margin: 20px;
+   border-radius: 50px;
+}
+
+

@@ -1,0 +1,47 @@
+body{
+    background-color: sandybrown ;
+    font-family: Georgia,  serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+.container{
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #d3b79f;
+    max-width: 800px;
+}
+.main-title{
+    font-size: 4em;
+    font-family: cursive, serif;
+    margin: 0;
+}
+.sub-title{
+    font-size: 2em;
+    margin: 10px;
+    color: yellow;
+}
+.description{
+    font-size: 2em;
+    margin: 10px;
+    font-weight: bold;
+}
+.crafted{
+    font-size: 1.5em;
+    font-family: cursive, serif;
+    margin: 20px;
+    color: yellow;
+}
+.footer{
+    margin-top: 20px;
+    background-color: brown;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+   
+    
+
+}
