@@ -9,6 +9,8 @@ body{
 
 }
 .container{
+    margin: 0 auto;
+    margin-top: 200px;
     text-align: center;
     padding: 20px;
     border: 2px solid #d3b79f;
