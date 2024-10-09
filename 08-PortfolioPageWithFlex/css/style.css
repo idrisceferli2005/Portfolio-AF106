@@ -1,0 +1,230 @@
+
+#para{
+    padding: 3rem;
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-transform: uppercase;
+   
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+a:hover{
+    color: aquamarine;
+}
+#start-area{
+    background-color: #1ABC9C;
+    height: 54.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  
+}
+.start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.starbox{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 3rem;
+
+}
+.starlife{
+    background-color: white;
+    width: 11.2rem;
+    height: 0.4rem;
+    
+}
+.image{
+    width: 25.4rem;
+}
+.header{
+    font-size: 3rem;
+    margin-top: 4rem;
+}
+#start-areal{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   color:#2c3e50;
+    
+    height: 54.6rem;
+   
+    
+}
+.starlike{
+    width: 11.2rem;
+    height: 0.4rem;
+    background-color: #2c3e50;
+    font-size: 3rem;
+}
+.starboxs{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 3rem; }
+    .headering{
+       
+        align-items: center;
+        
+        font-size: 4rem;
+    }
+   .Portfolio-cards{
+    width: 70rem;
+    height: 20rem;
+    flex-wrap: wrap;
+    
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+
+   }
+   .item{
+    width: 20rem;
+    height: 15rem;
+    margin: 0.5rem;
+    background-color: white;
+    border: 1px solid black;
+    
+   }
+   img{
+    width: 100%;
+    height: 100%;
+   }
+   #start-areall{
+    background-color: #1ABC9C;
+    height: 54.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+   }
+   .starlikes{
+    width: 11.2rem;
+    height: 0.4rem;
+    background-color: white;
+   }
+   .starboxes{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 3rem;
+    
+   }
+   .hear{
+    font-size: 5rem;
+   }
+   .lock{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+   .textt{
+    text-transform: uppercase;
+    font-size: 2rem;
+   }
+   #contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 54.6rem;
+   }
+   .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   flex-direction: column;
+   }
+   .contack-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    
+   }
+   .submit{
+    width: 100%;
+    padding: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 0.4rem;
+   }
+   .input-field{
+    width: 20rem;
+    padding: 2rem;
+    border-radius: 0.4rem;
+    display: flex;
+
+   }
+   .contact-form{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    font-size: 4rem;
+    
+   }
+   .starboxess{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+   }
+#footer{
+    background-color: #2c3e50;
+    height: 54.6rem;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}
+.Submited{
+    width: 9rem;
+    padding: 1rem;
+    background-color: #28a745;
+    display: flex;
+    color:white ;
+    border: 1px solid white;
+    border-radius: 1rem;
+   
+}
+.hero{
+   
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+
+}
+.her{
+    width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.he{
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
