@@ -1,0 +1,492 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+    border: 1px solid red;
+    background-color: black;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid red;
+    background-color: black;
+}
+.box{
+    background-color: green;
+    height: 100vh;
+    width: 30px;
+    margin: 1px;
+    border: 1px solid black;
+    
+   }
+
+   .end{
+    display: flex;
+    
+   justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    background-color: black;
+    width: 100%;
+    
+}
+.sart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    border: 1px solid red;
+    background-color: black;
+}
+.para{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    border: 1px solid red;
+    background-color: black;
+}
+
+
+   .box1{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+    
+
+   }
+
+   .box-1{
+    background-color: brown;
+    align-content: center;
+    text-align: center;
+
+}
+.box-2{
+    background-color: blueviolet;
+    align-content: center;
+    text-align: center;
+}
+.box-3{
+    background-color: blue;
+    align-content: center;
+    text-align: center;
+}
+.box-4{
+    background-color:royalblue;
+    align-content: center;
+    text-align: center;
+}
+.box-5{
+    background-color: aqua;
+    align-content: center;
+    text-align: center;
+}
+.box-6{
+    background-color: green;
+    align-content: center;
+    text-align: center;
+}
+.box-7{
+    background-color: yellowgreen;
+    align-content: center;
+    text-align: center;
+}
+.box-8{
+background-color: yellow;
+align-content: center;
+text-align: center;
+}
+.box-9{
+    background-color: orange;
+    align-content: center;
+    text-align: center;
+}
+.box-10{
+    background-color: brown;
+    align-content: center;
+    text-align: center;
+    flex-basis: 50px;
+}
+.span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    border: 1px solid red;
+    background-color: black;
+   
+   
+}
+.box-11{
+    background-color: brown;
+    align-content: center;
+    text-align: center;
+
+}
+.box-12{
+    background-color: blueviolet;
+    align-content: center;
+    text-align: center;
+}
+.box-13{
+    background-color: blue;
+    align-content: center;
+    text-align: center;
+}
+.box-14{
+    display: inline-block;
+    background-color:royalblue;
+    align-content: center;
+    text-align: center;
+    flex-basis: 90px;
+    
+}
+.box-15{
+    background-color: aqua;
+    align-content: center;
+    text-align: center;
+}
+.box-16{
+    background-color: green;
+    align-content: center;
+    text-align: center;
+}
+.box-17{
+    background-color: yellowgreen;
+    align-content: center;
+    text-align: center;
+}
+.box-18{
+background-color: yellow;
+align-content: center;
+text-align: center;
+}
+.box-19{
+    background-color: orange;
+    align-content: center;
+    text-align: center;
+}
+.box-20{
+    background-color: brown;
+    align-content: center;
+    text-align: center;
+}
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    border: 1px solid red;
+    background-color: black;
+
+}
+
+
+.box-21{
+    margin: 20px 0;
+    background-color: brown;
+    align-content: center;
+    text-align: center;
+
+}
+.box-22{
+    margin: 20px 0;
+    background-color: blueviolet;
+    align-content: center;
+    text-align: center;
+}
+.box-23{
+    margin: 20px 0;
+    display: inline-block;
+    flex-basis: 20px;
+    background-color: blue;
+    align-content: center;
+    text-align: center;
+}
+.box-24{
+    margin: 20px 0;
+    background-color:royalblue;
+    align-content: center;
+    text-align: center;
+}
+.box-25{
+    margin: 20px 0;
+    display: inline-block;
+    flex-basis: 120px;
+    background-color: aqua;
+    align-content: center;
+    text-align: center;
+}
+.box-26{
+    margin: 20px 0;
+    background-color: green;
+    align-content: center;
+    text-align: center;
+}
+.box-27{
+    margin: 20px 0;
+    display: inline-block;
+    flex-basis: 10px;
+    background-color: yellowgreen;
+    align-content: center;
+    text-align: center;
+}
+.box-28{
+    margin: 20px 0;
+    display: inline-block;
+    flex-basis: 150px;
+background-color: yellow;
+align-content: center;
+text-align: center;
+}
+.box-29{
+    margin: 20px 0;
+    background-color: orange;
+    align-content: center;
+    text-align: center;
+}
+.box-30{
+    margin: 20px 0;
+    background-color: brown;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+.box-31{
+    display: inline-block;
+    background-color: brown;
+    align-self: flex-start;
+    text-align: center;
+    align-content: center;
+   
+
+}
+.box-32{
+    display: inline-block;
+    align-self: flex-start;
+    background-color: blueviolet;
+    align-content: center;
+    text-align: center;
+}
+.box-33{
+    display: inline-block;
+    align-self: flex-start;
+    background-color: blue;
+    align-content: center;
+    text-align: center;
+}
+.box-34{
+    display: inline-block;
+    align-self: flex-start;
+    background-color:royalblue;
+    align-content: center;
+    text-align: center;
+}
+.box-35{
+    display: inline-block;
+    align-self: flex-start;
+    background-color: aqua;
+    align-content: center;
+    text-align: center;
+}
+.box-36{
+    display: inline-block;
+    align-self: flex-start;
+    background-color: green;
+    align-content: center;
+    text-align: center;
+}
+.box-37{
+    display: inline-block;
+    align-self: flex-start;
+    background-color: yellowgreen;
+    align-content: center;
+    text-align: center;
+}
+.box-38{
+    display: inline-block;
+    align-self: flex-start;
+background-color: yellow;
+align-content: center;
+text-align: center;
+}
+.box-39{
+    display: inline-block;
+    align-self: flex-start;
+    background-color: orange;
+    align-content: center;
+    text-align: center;
+}
+.box-40{
+    display: inline-block;
+    align-self: flex-start;
+    background-color: brown;
+    align-content: center;
+    text-align: center;
+}
+
+
+.box-41{
+    display: inline-block;
+    background-color: brown;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+   
+
+}
+.box-42{
+    display: inline-block;
+    align-self: center;
+    background-color: blueviolet;
+    align-content: center;
+    text-align: center;
+}
+.box-43{
+    display: inline-block;
+    align-self: center;
+    background-color: blue;
+    align-content: center;
+    text-align: center;
+}
+.box-44{
+    display: inline-block;
+    align-self: center;
+    background-color:royalblue;
+    align-content: center;
+    text-align: center;
+}
+.box-45{
+    display: inline-block;
+    align-self: center;
+    background-color: aqua;
+    align-content: center;
+    text-align: center;
+}
+.box-46{
+    display: inline-block;
+    align-self: center;
+    background-color: green;
+    align-content: center;
+    text-align: center;
+}
+.box-47{
+    display: inline-block;
+    align-self: center;
+    background-color: yellowgreen;
+    align-content: center;
+    text-align: center;
+}
+.box-48{
+    display: inline-block;
+    align-self: center;
+background-color: yellow;
+align-content: center;
+text-align: center;
+}
+.box-49{
+    display: inline-block;
+    align-self: center;
+    background-color: orange;
+    align-content: center;
+    text-align: center;
+}
+.box-50{
+    display: inline-block;
+    align-self: center;
+    background-color: brown;
+    align-content: center;
+    text-align: center;
+}
+
+
+.box-51{
+    display: inline-block;
+    background-color: brown;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+   
+
+}
+.box-52{
+    display: inline-block;
+    align-self: center;
+    background-color: blueviolet;
+    align-content: center;
+    text-align: center;
+}
+.box-53{
+    display: inline-block;
+    align-self: center;
+    background-color: blue;
+    align-content: center;
+    text-align: center;
+}
+.box-54{
+    display: inline-block;
+    align-self: center;
+    background-color:royalblue;
+    align-content: center;
+    text-align: center;
+}
+.box-55{
+    display: inline-block;
+    align-self: center;
+    background-color: aqua;
+    align-content: center;
+    text-align: center;
+}
+.box-56{
+    display: inline-block;
+    align-self: center;
+    background-color: green;
+    align-content: center;
+    text-align: center;
+}
+.box-57{
+    display: inline-block;
+    align-self: center;
+    background-color: yellowgreen;
+    align-content: center;
+    text-align: center;
+}
+.box-58{
+    display: inline-block;
+    align-self: center;
+background-color: yellow;
+align-content: center;
+text-align: center;
+}
+.box-59{
+    display: inline-block;
+    align-self: center;
+    background-color: orange;
+    align-content: center;
+    text-align: center;
+}
+.box-60{
+    display: inline-block;
+    align-self: center;
+    background-color: brown;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+

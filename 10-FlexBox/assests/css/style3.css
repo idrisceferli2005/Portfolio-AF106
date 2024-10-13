@@ -1,0 +1,459 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+   flex-wrap: wrap;
+   background-color: gray;
+   
+    
+}
+.box{
+    background-color: green;
+    height: 100px;
+    width: 300px;
+    margin: 1px;
+    border: 1px solid black;
+   
+    font-size: 20px;
+    color: white;
+}
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        border: 1px solid red;
+        background-color: black;
+      
+        align-content: flex-start;
+        width: 100%;
+    }
+    .span{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+        height: 100vh;
+        border: 1px solid red;
+        background-color: black;
+    }
+    .hero{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+       flex-direction: row;
+       width: 100%;
+       height: 100vh;
+       border: 1px solid red;
+       background-color: black;
+    }
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-content:space-around ;
+        width: 100%;
+        height: 100vh;
+        border: 1px solid red;
+       background-color: black;
+    }
+
+    .start{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 100%;
+        height: 100vh;
+        border: 1px solid red;
+       background-color: black;
+    }
+
+    .end{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        width: 100%;
+        height: 100vh;
+        border: 1px solid red;
+       background-color: black;
+    }
+    .para{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        width: 100%;
+        height: 100%;
+        border: 1px solid red;
+       background-color: black;
+
+    }
+
+    .box-1{
+        background-color: red;
+        align-content: center;
+        text-align: center;
+    
+    }
+    .box-2{
+        background-color: blueviolet;
+        align-content: center;
+        text-align: center;
+    }
+    .box-3{
+        background-color: blue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-4{
+        background-color:royalblue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-5{
+        background-color: aqua;
+        align-content: center;
+        text-align: center;
+    }
+    .box-6{
+        background-color: green;
+        align-content: center;
+        text-align: center;
+    }
+    .box-7{
+        background-color: yellowgreen;
+        align-content: center;
+        text-align: center;
+    }
+    .box-8{
+    background-color: yellow;
+    align-content: center;
+    text-align: center;
+    }
+    .box-9{
+        background-color: orange;
+        align-content: center;
+        text-align: center;
+    }
+    .box-10{
+        background-color: brown;
+        align-content: center;
+        text-align: center;
+    }
+
+
+    .box-11{
+        background-color: red;
+        align-content: center;
+        text-align: center;
+    
+    }
+    .box-12{
+        background-color: blueviolet;
+        align-content: center;
+        text-align: center;
+    }
+    .box-13{
+        background-color: blue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-14{
+        background-color:royalblue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-15{
+        background-color: aqua;
+        align-content: center;
+        text-align: center;
+    }
+    .box-16{
+        background-color: green;
+        align-content: center;
+        text-align: center;
+    }
+    .box-17{
+        background-color: yellowgreen;
+        align-content: center;
+        text-align: center;
+    }
+    .box-18{
+    background-color: yellow;
+    align-content: center;
+    text-align: center;
+    }
+    .box-19{
+        background-color: orange;
+        align-content: center;
+        text-align: center;
+    }
+    .box-20{
+        background-color: brown;
+        align-content: center;
+        text-align: center;
+    }
+
+    .box-21{
+        background-color: red;
+        align-content: center;
+        text-align: center;
+    
+    }
+    .box-22{
+        background-color: blueviolet;
+        align-content: center;
+        text-align: center;
+    }
+    .box-23{
+        background-color: blue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-24{
+        background-color:royalblue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-25{
+        background-color: aqua;
+        align-content: center;
+        text-align: center;
+    }
+    .box-26{
+        background-color: green;
+        align-content: center;
+        text-align: center;
+    }
+    .box-27{
+        background-color: yellowgreen;
+        align-content: center;
+        text-align: center;
+    }
+    .box-28{
+    background-color: yellow;
+    align-content: center;
+    text-align: center;
+    }
+    .box-29{
+        background-color: orange;
+        align-content: center;
+        text-align: center;
+    }
+    .box-30{
+        background-color: brown;
+        align-content: center;
+        text-align: center;
+    }
+
+
+    .box-31{
+        background-color: red;
+        align-content: center;
+        text-align: center;
+    
+    }
+    .box-32{
+        background-color: blueviolet;
+        align-content: center;
+        text-align: center;
+    }
+    .box-33{
+        background-color: blue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-34{
+        background-color:royalblue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-35{
+        background-color: aqua;
+        align-content: center;
+        text-align: center;
+    }
+    .box-36{
+        background-color: green;
+        align-content: center;
+        text-align: center;
+    }
+    .box-37{
+        background-color: yellowgreen;
+        align-content: center;
+        text-align: center;
+    }
+    .box-38{
+    background-color: yellow;
+    align-content: center;
+    text-align: center;
+    }
+    .box-39{
+        background-color: orange;
+        align-content: center;
+        text-align: center;
+    }
+    .box-40{
+        background-color: brown;
+        align-content: center;
+        text-align: center;
+    }
+
+
+    .box-41{
+        background-color: red;
+        align-content: center;
+        text-align: center;
+    
+    }
+    .box-42{
+        background-color: blueviolet;
+        align-content: center;
+        text-align: center;
+    }
+    .box-43{
+        background-color: blue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-44{
+        background-color:royalblue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-45{
+        background-color: aqua;
+        align-content: center;
+        text-align: center;
+    }
+    .box-46{
+        background-color: green;
+        align-content: center;
+        text-align: center;
+    }
+    .box-47{
+        background-color: yellowgreen;
+        align-content: center;
+        text-align: center;
+    }
+    .box-48{
+    background-color: yellow;
+    align-content: center;
+    text-align: center;
+    }
+    .box-49{
+        background-color: orange;
+        align-content: center;
+        text-align: center;
+    }
+    .box-50{
+        background-color: brown;
+        align-content: center;
+        text-align: center;
+    }
+
+
+    .box-51{
+        background-color: red;
+        align-content: center;
+        text-align: center;
+    
+    }
+    .box-52{
+        background-color: blueviolet;
+        align-content: center;
+        text-align: center;
+    }
+    .box-53{
+        background-color: blue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-54{
+        background-color:royalblue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-55{
+        background-color: aqua;
+        align-content: center;
+        text-align: center;
+    }
+    .box-56{
+        background-color: green;
+        align-content: center;
+        text-align: center;
+    }
+    .box-57{
+        background-color: yellowgreen;
+        align-content: center;
+        text-align: center;
+    }
+    .box-58{
+    background-color: yellow;
+    align-content: center;
+    text-align: center;
+    }
+    .box-59{
+        background-color: orange;
+        align-content: center;
+        text-align: center;
+    }
+    .box-60{
+        background-color: brown;
+        align-content: center;
+        text-align: center;
+    }
+
+    .box-61{
+        background-color: red;
+        align-content: center;
+        text-align: center;
+    
+    }
+    .box-62{
+        background-color: blueviolet;
+        align-content: center;
+        text-align: center;
+    }
+    .box-63{
+        background-color: blue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-64{
+        background-color:royalblue;
+        align-content: center;
+        text-align: center;
+    }
+    .box-65{
+        background-color: aqua;
+        align-content: center;
+        text-align: center;
+    }
+    .box-66{
+        background-color: green;
+        align-content: center;
+        text-align: center;
+    }
+    .box-67{
+        background-color: yellowgreen;
+        align-content: center;
+        text-align: center;
+    }
+    .box-68{
+    background-color: yellow;
+    align-content: center;
+    text-align: center;
+    }
+    .box-69{
+        background-color: orange;
+        align-content: center;
+        text-align: center;
+    }
+    .box-70{
+        background-color: brown;
+        align-content: center;
+        text-align: center;
+    }
