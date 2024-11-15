@@ -112,6 +112,8 @@ favoriteButton.classList.add("fa", "fa-heart");
 favoriteButton.style.position = "absolute";
 favoriteButton.style.top = "8px";
 favoriteButton.style.right = "8px";
+favoriteButton.style.background = "none"
+favoriteButton.style.border= "none"
 card.appendChild(favoriteButton);
 
 
