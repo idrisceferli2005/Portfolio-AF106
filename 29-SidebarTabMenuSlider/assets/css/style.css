@@ -1,0 +1,51 @@
+body {
+  background-color: beige;
+
+  padding: 20px;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.company {
+  background-color: wheat;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  text-align: center;
+}
+
+.expandable {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.expandable-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(99, 99, 243);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.expandable-content {
+  padding: 10px;
+  display: none;
+  background-color: white;
+  color: #333;
+}
+
+.toggle-icon {
+  font-size: 18px;
+}
