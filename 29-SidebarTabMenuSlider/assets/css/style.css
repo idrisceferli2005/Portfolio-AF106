@@ -21,14 +21,14 @@ body {
   text-align: center;
 }
 
-.expandable {
+.text {
   margin-top: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
 }
 
-.expandable-title {
+.text-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +39,7 @@ body {
   cursor: pointer;
 }
 
-.expandable-content {
+.text-content {
   padding: 10px;
   display: none;
   background-color: white;

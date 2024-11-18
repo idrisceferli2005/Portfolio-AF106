@@ -1,9 +1,9 @@
-const expandableTitles = document.querySelectorAll(".expandable-title");
+const textTitles = document.querySelectorAll(".text-title");
 
-expandableTitles.forEach((title) => {
+textTitles.forEach((title) => {
   title.addEventListener("click", () => {
-    const expandable = title.parentElement;
-    const content = expandable.querySelector(".expandable-content");
+    const text = title.parentElement;
+    const content = text.querySelector(".text-content");
     const toggleIcon = title.querySelector(".toggle-icon");
 
     if (content.style.display === "block") {
