@@ -26,8 +26,10 @@ if(!currentUser) {
         let removeBtn = document.createElement("button");
         removeBtn.classList.add("btn", "btn-danger", "remove-btn");
         removeBtn.textContent = "Remove";
+        restoreButtonState(removeBtn, product.id);
         removeBtn.addEventListener("click", () => {
             removeItem(product.id);
+            disableButton(removeBtn, product.id);
         });
 
         function removeItem(productId)  {
@@ -55,6 +57,22 @@ if(!currentUser) {
         category.textContent =  product.category;
         price.textContent = `$${product.price}`;
        
+    }
+
+    function restoreButtonState(button, productId) {
+        let buttonState = JSON.parse(localStorage.getItem("buttonState")) || {};
+        if (buttonState[productId]) {
+            button.disabled = true; 
+        } else {
+            button.disabled = false; 
+        }
+    }
+
+    function disableButton(button, productId) {
+        button.disabled = true;
+        let buttonState = JSON.parse(localStorage.getItem("buttonState")) || {};
+        buttonState[productId] = true; 
+        localStorage.setItem("buttonState", JSON.stringify(buttonState));
     }
 
     if(currentUser.wishList.length > 0) {
