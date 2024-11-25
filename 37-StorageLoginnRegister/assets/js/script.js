@@ -404,17 +404,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let userIndex = users.findIndex((user) => user.id === currentUser.id);
 
-    if (currentUser.wishList.some((item) => item.id === productId)) {
+    if (currentUser.wishlist.some((item) => item.id === productId)) {
       let productIndex = currentUser.wishList.findIndex(
         (product) => product.id === productId
       );
-      currentUser.wishList.splice(productIndex, 1);
+      currentUser.wishlist.splice(productIndex, 1);
       heartElement.classList.add("far");
       heartElement.classList.remove("fas");
       toast("Product deleted from wishlist");
     } else {
       let product = products.find((product) => product.id === productId);
-      currentUser.wishList.push(product);
+      currentUser.wishlist.push(product);
       heartElement.classList.remove("far");
       heartElement.classList.add("fas");
       toast("Product added to wishlist");

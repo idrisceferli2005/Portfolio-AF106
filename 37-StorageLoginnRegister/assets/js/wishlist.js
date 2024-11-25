@@ -75,8 +75,8 @@ if(!currentUser) {
         localStorage.setItem("buttonState", JSON.stringify(buttonState));
     }
 
-    if(currentUser.wishList.length > 0) {
-        currentUser.wishList.forEach(product => {
+    if(currentUser.wishlist.length > 0) {
+        currentUser.wishlist.forEach(product => {
             createWishlistItem(product);
         });
 
