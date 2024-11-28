@@ -41,7 +41,7 @@
     height: 100px;
   }
   
-  .edit-btn {
+  .edit-button {
     background-color: #3498db;
     color: white;
     border: none;
@@ -62,7 +62,7 @@
     text-transform: uppercase;
   }
   
-  .delete-btn {
+  .delete-button {
     background-color: #e74c3c;
     color: white;
     border: none;
@@ -89,7 +89,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+   
+
   .myModal {
     width: 400px;
     padding: 20px;
