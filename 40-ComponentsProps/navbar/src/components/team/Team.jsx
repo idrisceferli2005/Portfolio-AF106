@@ -1,5 +1,8 @@
 // import React from 'react'
 import './Team.css'
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 const Team = () => {
   return (
@@ -11,25 +14,25 @@ const Team = () => {
             <img src="https://picsum.photos/200/300" alt="" />
             <h3>Jean Smith</h3>
             <p>Skateboard Trainer</p>
-            <a href="">Facebook</a>
-            <a href="">Twitter</a>
-            <a href="">Instagram</a>
+            <a href=""><FaFacebook /></a>
+            <a href=""><FaTwitter /></a>
+            <a href=""><FaInstagram /></a>
         </div>
         <div className='card'>
             <img src="https://picsum.photos/200/300" alt="" />
             <h3>Bob Carry</h3>
             <p>Skateboard Trainer</p>
-            <a href="">Facebook</a>
-            <a href="">Twitter</a>
-            <a href="">Instagram</a>
+            <a href=""><FaFacebook /></a>
+            <a href=""><FaTwitter /></a>
+            <a href=""><FaInstagram /></a>
         </div>
         <div className='card'>
             <img src="https://picsum.photos/200/300" alt="" />
             <h3>Ricky Fisher</h3>
             <p>Skateboard Trainer</p>
-            <a href="">Facebook</a>
-            <a href="">Twitter</a>
-            <a href="">Instagram</a>
+            <a href=""><FaFacebook /></a>
+            <a href=""><FaTwitter /></a>
+            <a href=""><FaInstagram /></a>
         </div>
       </div>
     </div>
