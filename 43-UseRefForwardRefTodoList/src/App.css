@@ -1,0 +1,91 @@
+.counter-container {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 50px auto;
+  margin-left: 600px;
+  padding: 130px;
+  max-width: 450px;
+  border: 5px solid #4caf50;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #f5f7fa, #e4efe9);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  animation: animate 0.5s;
+}
+
+.counter-display {
+  font-size: 4.5rem;
+  margin: 20px 0;
+  color: #444;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.count-text {
+  color: #4caf50;
+  text-shadow: 0 0 15px #4caf50, 0 0 30px #81c784;
+}
+
+.buttons button {
+  font-size: 1.8rem;
+  margin: 10px 15px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button:hover {
+  background: linear-gradient(135deg, #45a049, #66bb6a);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.input-section {
+  margin-top: 30px;
+}
+
+.counter-input {
+  font-size: 1.4rem;
+  padding: 12px;
+  width: 230px;
+  margin-right: 15px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.counter-input ::-webkit-inner-spin-button,
+.counter-input ::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-section button {
+  font-size: 1.4rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #2196f3, #64b5f6);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input-section button:hover {
+  background: linear-gradient(135deg, #1e88e5, #42a5f5);
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-primary {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+}
+
+.button-secondary {
+  background: linear-gradient(135deg, #2196f3, #64b5f6);
+}
