@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": "3e2d",
+      "email": "idris2005@gmail.com",
+      "name": "Idris",
+      "password": "Ceferli2005#",
+      "confirmpassword": "Ceferli2005#",
+      "surname": "Ceferli",
+      "username": "idris",
+      "isLogin": true
+    }
+  ]
+}
