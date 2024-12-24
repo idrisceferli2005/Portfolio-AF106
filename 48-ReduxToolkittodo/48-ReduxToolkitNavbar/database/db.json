@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": "bf42",
+      "name": "Idris Ceferli",
+      "surname": "Ceferli",
+      "username": "idris",
+      "email": "idris2005@gmail.com",
+      "password": "Ceferli2005#",
+      "confirmpassword": "Ceferli2005#",
+      "isLogin": true
+    }
+  ]
+}
