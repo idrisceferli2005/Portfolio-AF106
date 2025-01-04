@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Wishlist.css";
+import styles from "./Wishlist.module.css";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getUser, updateWishlist } from "../../../redux/features/wishlistSlice";
@@ -52,55 +52,55 @@ const Wishlist = () => {
 
   return (
     <div>
-      <h1>Your Wishlist</h1>
-      <section className="wishlist-container">
-        <div className="container">
-          <div className="row">
-            <div className="wishlist">
-              {user && user.wishlist.length > 0 ? (
-                user.wishlist.map((wishlistItem) => (
-                  <div className="wishlist-item" key={wishlistItem.id}>
-                    <div className="image">
-                      <img src={wishlistItem.image} alt="Product Image" />
-                    </div>
-                    <h3 className="title">{wishlistItem.title}</h3>
-                    <p className="category">{wishlistItem.category}</p>
-                    <p className="price">${wishlistItem.price}</p>
-                    <button
-                      className="btn btn-danger removeBtn"
-                      onClick={() => {
-                        handleDelete(wishlistItem);
-                      }}
-                    >
-                      Remove
-                    </button>
-                    <button
-                      className="btn btn-primary addBtn"
-                      onClick={() => handleAddToCart(wishlistItem)}
-                    >
-                      Add to Cart
-                    </button>
+    <h1>Your Wishlist</h1>
+    <section className={styles.wishlistContainer}>
+      <div className="container">
+        <div className="row">
+          <div className={styles.wishlist}>
+            {user && user.wishlist.length > 0 ? (
+              user.wishlist.map((wishlistItem) => (
+                <div className={styles.wishlistItem} key={wishlistItem.id}>
+                  <div className={styles.image}>
+                    <img src={wishlistItem.image} alt="Product Image" />
                   </div>
-                ))
-              ) : (
-                <p className="empty">Your wishlist is empty</p>
-              )}
-            </div>
-            {user && user.wishlist.length > 0 && (
-              <button
-                className="btn btn-warning clearBtn"
-                onClick={handleClearWishlist}
-              >
-                Clear All
-              </button>
+                  <h3 className={styles.title}>{wishlistItem.title}</h3>
+                  <p className={styles.category}>{wishlistItem.category}</p>
+                  <p className={styles.price}>${wishlistItem.price}</p>
+                  <button
+                    className={`btn btn-danger ${styles.removeBtn}`}
+                    onClick={() => {
+                      handleDelete(wishlistItem);
+                    }}
+                  >
+                    Remove
+                  </button>
+                  <button
+                    className={`btn btn-primary ${styles.addBtn}`}
+                    onClick={() => handleAddToCart(wishlistItem)}
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              ))
+            ) : (
+              <p className={styles.empty}>Your wishlist is empty</p>
             )}
-            <Link className="link" to="/">
-              back
-            </Link>
           </div>
+          {user && user.wishlist.length > 0 && (
+            <button
+              className={`btn btn-warning ${styles.clearBtn}`}
+              onClick={handleClearWishlist}
+            >
+              Clear All
+            </button>
+          )}
+          <Link className={styles.link} to="/">
+            back
+          </Link>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+  </div>
   );
 };
 

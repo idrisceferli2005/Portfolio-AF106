@@ -1,0 +1,93 @@
+.basketContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basket {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.basketItem {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 300px; /* Ensure all cards have the same size */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.category,
+.price {
+  margin: 5px 0;
+}
+
+.countArea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.minus-btn {
+  background-color: #f0ad4e; 
+  color: white;
+}
+
+.plus-btn {
+  background-color: #5bc0de; 
+  color: white;
+}
+
+.removeBtn {
+  background-color: #d9534f; 
+  color: white;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.totalPrice {
+  font-weight: bold;
+}
+
+.empty {
+  text-align: center;
+  font-size: 1.2em;
+  color: #888;
+}

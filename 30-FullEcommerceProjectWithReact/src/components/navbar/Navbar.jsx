@@ -19,7 +19,8 @@ import Person3Icon from "@mui/icons-material/Person3";
 import { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { searchProduct } from "../../redux/features/productSlice";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -111,6 +112,10 @@ export default function Navbar() {
       setAnchorEl(null); 
     }
   };
+  const dispatch = useDispatch();
+  const handleSearch = (value) => {
+    dispatch(searchProduct(value));
+  };
 
 
   const menuId = "primary-search-account-menu";
@@ -183,6 +188,7 @@ const Hello = () => {
             <StyledInputBase
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
+              onChange={(e) => handleSearch(e.target.value)}
             />
           </Search>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
