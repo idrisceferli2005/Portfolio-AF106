@@ -91,7 +91,7 @@ const Card = ({ card }) => {
         </div>
       </div>
 
-      <Button variant="contained" color="primary" className="add-to-cart" onClick={(e)=>addToBasket(e, card)}>
+      <Button variant="contained" color="light" className="add-to-cart" onClick={(e)=>addToBasket(e, card)}>
         Add to basket
       </Button>
     </div>

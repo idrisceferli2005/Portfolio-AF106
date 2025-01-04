@@ -169,7 +169,7 @@ const Hello = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
         position="static"
-        style={{ backgroundColor: "black", color: "goldenrod" }}
+        style={{ backgroundColor: "white", color: "goldenrod" }}
       >
         <Toolbar>
           <Typography
@@ -179,20 +179,11 @@ const Hello = () => {
             sx={{ display: { xs: "none", sm: "block" } }}
             color="primary"
           >
-            MUI
+            Snobella
           </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon color="primary"/>
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-              onChange={(e) => handleSearch(e.target.value)}
-            />
-          </Search>
+     
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
+            <Button sx={{ my: 2, color: "black", display: "block" }}>
               <Link to="/">Products</Link>
             </Button>
             <Button sx={{ my: 2, color: "white", display: "block" }}>
@@ -203,7 +194,16 @@ const Hello = () => {
             </Button>
           </Box>
 
-          
+          <Search>
+            <SearchIconWrapper>
+              <SearchIcon color="primary"/>
+            </SearchIconWrapper>
+            <StyledInputBase
+              placeholder="Search…"
+              inputProps={{ "aria-label": "search" }}
+              onChange={(e) => handleSearch(e.target.value)}
+            />
+          </Search>
 
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
           <IconButton
@@ -214,6 +214,17 @@ const Hello = () => {
              {existUser ? (existUser.username):null}
            
              
+            </IconButton>
+            <IconButton
+              size="large"
+              edge="end"
+              aria-label="account of current user"
+              aria-controls={menuId}
+              aria-haspopup="true"
+              onClick={handleProfileMenuOpen}
+              color="inherit"
+            >
+              <Person3Icon color="primary" />
             </IconButton>
             <IconButton
               size="large"
@@ -240,17 +251,7 @@ const Hello = () => {
               </Badge>
            </Link>
             </IconButton>
-            <IconButton
-              size="large"
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color="inherit"
-            >
-              <Person3Icon color="primary" />
-            </IconButton>
+    
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton

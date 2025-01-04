@@ -61,7 +61,7 @@ const About = () => {
               <div className={styles.handbagTitle}>
                 <h3 className={styles.off}>30% off</h3>
                 <h1>Handbag products</h1>
-                <p>It is a long established fact that a reader will be distracted by the readable content expound the actual teachings of the great explorer</p>
+                <p>It is a long established fact that a reader will be <br /> distracted by the readable content expound the actual <br/>teachings of the great explorer</p>
                 <Link to={"/"} className={styles.shop}>Shop now</Link>
               </div>
               <div className={styles.handbagImage}>
@@ -74,9 +74,7 @@ const About = () => {
               <div className={styles.handbagTitle}>
                
               </div>
-              <div className={styles.handbagImage}>
-                <img src="/sumka.png" alt="Handbag" />
-              </div>
+             
             </div>
           </div>
         </div>
@@ -91,6 +89,25 @@ const About = () => {
         <i className="bi bi-credit-card-2-back-fill icon"></i>
         <span>Payment at the door or online</span>
       </div>
+      <div className={styles.bags}>
+<div className={styles.bag}>
+  <img src="/coachpink.png" alt="" />
+  <h4 className={styles.photo}>Shoulder  bags</h4>
+</div>
+<div className={styles.bag}>
+  <img src="/qarabag.png" alt="" />
+  <h4 className={styles.photo}>Hand bag</h4>
+</div>
+<div className={styles.bag}>
+  <img src="/saribag.png" alt="" />
+  <h4 className={styles.photo}>Backpack</h4>
+</div>
+<div className={styles.bag}>
+  <img src="/narincibag.png" alt="" />
+  <h4 className={styles.photo}>Evenings bags</h4>
+</div>
+      </div>
+      
       <div className={styles.carts}>
         <Slider {...settings}>
           {datas && datas.map((card) => (

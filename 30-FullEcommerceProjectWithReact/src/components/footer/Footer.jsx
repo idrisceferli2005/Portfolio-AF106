@@ -72,7 +72,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 aria-label="Instagram"
               >
-                <InstagramIcon />
+                <InstagramIcon color="error" />
               </a>
 
               <a
@@ -90,7 +90,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
               >
-                <WhatsAppIcon />
+                <WhatsAppIcon color="success" />
               </a>
             </div>
           </div>
