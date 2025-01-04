@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const datas = useSelector((state) => state.products.products.slice(0, 4));
@@ -61,7 +62,7 @@ const About = () => {
                 <h3 className={styles.off}>30% off</h3>
                 <h1>Handbag products</h1>
                 <p>It is a long established fact that a reader will be distracted by the readable content expound the actual teachings of the great explorer</p>
-                <a href="./products.html" className={styles.shop}>Shop now</a>
+                <Link to={"/"} className={styles.shop}>Shop now</Link>
               </div>
               <div className={styles.handbagImage}>
                 <img src="/sumka.png" alt="Handbag" />
@@ -71,10 +72,7 @@ const About = () => {
           <div className={styles.slide}>
             <div className={styles.handbag}>
               <div className={styles.handbagTitle}>
-                <h3 className={styles.off}>10% off</h3>
-                <h1>Handbag products</h1>
-                <p>It is a long established fact that a reader will be distracted by the readable content expound the actual teachings of the great explorer</p>
-                <a href="./products.html" className={styles.shop}>Shop now</a>
+               
               </div>
               <div className={styles.handbagImage}>
                 <img src="/sumka.png" alt="Handbag" />

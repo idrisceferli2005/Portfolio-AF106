@@ -194,9 +194,7 @@
     width: 642px;
     height: 535px;
   }
-  .icon {
-    font-size: 50px;
-  }
+
   .delivery {
     display: flex;
     align-items: center;
@@ -226,6 +224,11 @@
     position: absolute;
     top: 80px;
     left: 45px;
+  }
+  .handbagImage img {
+    width: 100%; /* Konteynerin ölçüsünə uyğunlaşır */
+    height: auto; /* Şəkilin təbii ölçü nisbətini saxlayır */
+    max-width: 700px; /* Maksimum eni təyin edir */
   }
   .featured {
     display: flex;
@@ -383,7 +386,8 @@
     }
   
     .handbag-image img {
-      max-width: 80%;
+     width: auto;
+     height: 100px;
     }
   
     .delivery {
@@ -407,13 +411,7 @@
     }
   }
   
-  .eveningbags {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 80px;
-    flex-wrap: wrap;
-  }
+
   
   .sliderContainer {
     background: #ffe2e0;
@@ -458,3 +456,17 @@
     display: flex;
   }
   
+  .icon {
+    font-size: 1.5rem; /* Ölçünü ehtiyacınıza görə dəyişə bilərsiniz */
+    margin-right: 10px; /* İkon ilə mətn arasında boşluq əlavə edir */
+    vertical-align: middle; /* İkonun mətnlə düzgün hizalanmasını təmin edir */
+  }
+
+
+  .eveningbags {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+  }

@@ -1,0 +1,120 @@
+.container {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    
+  }
+  .snobella {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.snobella h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0; 
+}
+
+  .snobellatitle{
+    display: flex;
+    justify-content: space-between;
+  
+    gap: 40px;
+  }
+
+  .righttitle li{
+    list-style-type: none;
+    margin-bottom: 8px; 
+    font-size: 14px; 
+    color: #333;
+  }
+  .lefttitle p {
+    line-height: 1.6; 
+    color: #555; 
+    margin-bottom: 10px;
+}
+    
+.footerend {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd; 
+}
+
+.ended p {
+    font-size: 14px;
+    color: #999;
+}
+
+.endedicon i {
+    font-size: 20px; 
+    color: #555;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.endedicon i:hover {
+    color: #007bff;
+}
+
+
+
+  @media (max-width: 768px) {
+
+  
+    footer .snobellatitle {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    footer .snobellatitle ul {
+        margin-bottom: 10px;
+    }
+  
+
+  
+  footer .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .footerend {
+      flex-direction: column;
+  }
+  
+
+  }
+  
+  @media (max-width: 480px) {
+
+  
+    footer .snobellatitle {
+        gap: 10px;
+    }
+  
+    footer .footerend {
+        flex-direction: column;
+        gap: 5px;
+    }
+  
+    .ended-icon i {
+        margin: 5px;
+    }
+  
+
+  
+
+  
+
+  }
+
+  
+

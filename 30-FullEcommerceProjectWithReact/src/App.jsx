@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Layout from "./components/layout/Layout";
 import Home from "./components/pages/Home";
-import Contact from "./components/pages/Contact";
 import Login from "./components/pages/auth/login/Login";
 import Register from "./components/pages/auth/register/Register";
 import NotFoundPage from "./components/pages/auth/NotFoundPage";
@@ -25,10 +24,6 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
       },
       {
         path: "/wishlist",

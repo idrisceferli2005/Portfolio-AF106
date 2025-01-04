@@ -193,9 +193,6 @@ const Hello = () => {
               <Link to="/about">Home</Link>
             </Button>
             <Button sx={{ my: 2, color: "white", display: "block" }}>
-              <Link to="/contact">Contact</Link>
-            </Button>
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
               <Link to="/admin">AdminPanel</Link>
             </Button>
           </Box>
