@@ -66,6 +66,15 @@ const Basket = () => {
             });
           }
 
+          const handlePayment = () => {
+            if (products.length === 0) {
+              alert("Your basket is empty. Please add some products.")
+            } else {
+              console.log("Basket Products:", products);
+              notify("Payment processing...");
+            }
+          };
+
   return (
     <Container>
       <Typography variant="h4" sx={{ marginBottom: 4, fontWeight: "bold" }}>
@@ -144,6 +153,14 @@ const Basket = () => {
         />
         <Button variant="contained" color="secondary" sx={{ marginLeft: 2 }}>
           Apply
+        </Button>
+        <Button
+          variant="contained"
+          color="error"
+          sx={{ marginLeft: 2 }}
+          onClick={handlePayment}
+        >
+          Confirm cart
         </Button>
         <Box sx={{ marginTop: 2 }}>
           <Button
