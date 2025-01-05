@@ -12,6 +12,7 @@ import Basket from "./components/pages/basket/Basket";
 import ProductDeteil from "./components/pages/productdetail/ProductDeteil";
 import AdminPanel from "./components/pages/admin/AdminPanel";
 import About from "./components/pages/admin/home/About";
+import UserPanel from "./components/pages/users/UserPanel";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/admin",
         element: <AdminPanel />,
+      },
+      {
+        path: "/user",
+        element: <UserPanel />,
       },
     ],
   },

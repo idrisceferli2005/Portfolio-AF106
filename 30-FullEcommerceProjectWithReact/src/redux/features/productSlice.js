@@ -2,6 +2,24 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 const baseUrl = "http://localhost:3000/products";
+const usersBaseUrl = "http://localhost/3000/users";
+
+
+export const getUsers = createAsyncThunk("users/getUsers", async () => {
+  const { data } = await axios(usersBaseUrl);
+  return data;
+});
+
+export const addUser = createAsyncThunk("users/addUser", async (user) => {
+  const { data } = await axios.post(usersBaseUrl, user);
+  return data;
+});
+
+export const deleteUser = createAsyncThunk("users/deleteUser", async (id) => {
+  await axios.delete(`${usersBaseUrl}/${id}`);
+  return id;
+});
+
 
 export const getProducts = createAsyncThunk("products/getproduct", async () => {
   const { data } = await axios(baseUrl);
@@ -35,6 +53,9 @@ export const updateProduct = createAsyncThunk(
 const initialState = {
   products: [],
   allProducts: [],
+  users: [], 
+  allUsers: [],
+  
 };
 
 export const productSlice = createSlice({
@@ -85,10 +106,21 @@ export const productSlice = createSlice({
         } else {
           return product;
         }
-      });
+      });   
+    });
+    builder.addCase(getUsers.fulfilled, (state, action) => {
+      state.users = action.payload;
+      state.allUsers = action.payload;
+    });
+    builder.addCase(addUser.fulfilled, (state, action) => {
+      state.users.push(action.payload);
+    });
+    builder.addCase(deleteUser.fulfilled, (state, action) => {
+      state.users = state.users.filter((user) => user.id !== action.payload);
     });
   },
-});
+  },
+);
 
 export default productSlice.reducer;
 export const {
