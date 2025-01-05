@@ -6,6 +6,16 @@ import { getUser, updateWishlist } from "../../../redux/features/wishlistSlice";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { addBasket } from "../../../redux/features/basketSlice";
+import {
+  Container,
+  Grid,
+  Card,
+  CardMedia,
+  CardContent,
+  Typography,
+  Button,
+  Box,
+} from "@mui/material";
 
 const Wishlist = () => {
   const dispatch = useDispatch();
@@ -51,56 +61,83 @@ const Wishlist = () => {
   };
 
   return (
-    <div>
-    <h1>Your Wishlist</h1>
-    <section className={styles.wishlistContainer}>
-      <div className="container">
-        <div className="row">
-          <div className={styles.wishlist}>
-            {user && user.wishlist.length > 0 ? (
-              user.wishlist.map((wishlistItem) => (
-                <div className={styles.wishlistItem} key={wishlistItem.id}>
-                  <div className={styles.image}>
-                    <img src={wishlistItem.image} alt="Product Image" />
-                  </div>
-                  <h3 className={styles.title}>{wishlistItem.title}</h3>
-                  <p className={styles.category}>{wishlistItem.category}</p>
-                  <p className={styles.price}>${wishlistItem.price}</p>
-                  <button
-                    className={`btn btn-danger ${styles.removeBtn}`}
-                    onClick={() => {
-                      handleDelete(wishlistItem);
-                    }}
+    <Container>
+    <Typography variant="h4" sx={{ marginBottom: 4, fontWeight: "bold" }}>
+      Your Wishlist
+    </Typography>
+    <Grid container spacing={3}>
+      {user && user.wishlist.length > 0 ? (
+        user.wishlist.map((wishlistItem) => (
+          <Grid item xs={12} sm={6} md={4} key={wishlistItem.id}>
+            <Card sx={{ boxShadow: 3, borderRadius: 2 }}>
+              <CardMedia
+                component="img"
+                height="180"
+                image={wishlistItem.image}
+                alt={wishlistItem.title}
+                sx={{ objectFit: "contain", padding: 2 }}
+              />
+              <CardContent>
+                <Typography variant="h6" noWrap>
+                  {wishlistItem.title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {wishlistItem.category}
+                </Typography>
+                <Typography
+                  variant="h6"
+                  color="primary"
+                  sx={{ marginY: 1 }}
+                >
+                  ${wishlistItem.price}
+                </Typography>
+                <Box display="flex" gap={1} marginTop={2}>
+                  <Button
+                    variant="contained"
+                    color="error"
+                    onClick={() => handleDelete(wishlistItem)}
                   >
                     Remove
-                  </button>
-                  <button
-                    className={`btn btn-primary ${styles.addBtn}`}
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="primary"
                     onClick={() => handleAddToCart(wishlistItem)}
                   >
                     Add to Cart
-                  </button>
-                </div>
-              ))
-            ) : (
-              <p className={styles.empty}>Your wishlist is empty</p>
-            )}
-          </div>
-          {user && user.wishlist.length > 0 && (
-            <button
-              className={`btn btn-warning ${styles.clearBtn}`}
-              onClick={handleClearWishlist}
-            >
-              Clear All
-            </button>
-          )}
-          <Link className={styles.link} to="/">
-            back
-          </Link>
-        </div>
-      </div>
-    </section>
-  </div>
+                  </Button>
+                </Box>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))
+      ) : (
+        <Typography
+          variant="h6"
+          color="text.secondary"
+          sx={{ textAlign: "center", width: "100%", marginTop: 4 }}
+        >
+          Your wishlist is empty.
+        </Typography>
+      )}
+    </Grid>
+    {user && user.wishlist.length > 0 && (
+      <Box sx={{ marginTop: 4, textAlign: "center" }}>
+        <Button
+          variant="contained"
+          color="warning"
+          onClick={handleClearWishlist}
+        >
+          Clear All
+        </Button>
+      </Box>
+    )}
+    <Box sx={{ marginTop: 4, textAlign: "center" }}>
+      <Link to="/" style={{ textDecoration: "none", color: "primary" }}>
+        <Button variant="outlined">Back</Button>
+      </Link>
+    </Box>
+  </Container>
   );
 };
 

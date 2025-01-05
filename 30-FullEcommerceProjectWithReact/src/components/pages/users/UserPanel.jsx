@@ -8,7 +8,8 @@ import { deleteUser, getUsers } from "../../../redux/features/productSlice";
 
 const UserPanel = () => {
   const dispatch = useDispatch();
-  const { users } = useSelector((state) => state.users);
+  const { users } = useSelector((state) => state.wishlist); 
+  console.log(users)// Ensure the correct state slice is used
 
   const [open, setOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -43,7 +44,7 @@ const UserPanel = () => {
   };
 
   useEffect(() => {
-    dispatch(getUsers()); 
+    dispatch(getUsers());
   }, [dispatch]);
 
   function notify(text, type) {

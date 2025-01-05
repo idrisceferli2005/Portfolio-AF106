@@ -36,6 +36,10 @@ const Register = () => {
       (user) => user.email === values.email || user.username === values.username
     );
 
+    if(data.length < 1) {
+      values.isAdmin = true;
+    }
+
     if (existUser) {
       notify("User already exists", "error");
       return;
@@ -58,6 +62,7 @@ const Register = () => {
       password: "",
       confirmpassword: "",
       isLogin: false,
+      isAdmin: false,
       wishlist: [],
       basket: [],
     },

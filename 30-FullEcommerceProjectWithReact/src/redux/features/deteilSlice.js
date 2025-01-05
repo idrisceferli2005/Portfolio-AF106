@@ -11,9 +11,10 @@ const deteilSlice = createSlice({
     addProduct(state, action) {
       const existProduct = state.products.find((product) => product.id === action.payload.id);
       if (!existProduct) {
-        state.products.push({ ...action.payload, quantity: 1 });
-      } else {
         existProduct.quantity += 1;
+     
+      } else {
+        state.products.push({ ...action.payload, quantity: 1 });
       }
     },
     pilusBtn(state, action) {

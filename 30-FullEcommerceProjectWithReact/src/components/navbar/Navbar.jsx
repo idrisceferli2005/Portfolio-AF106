@@ -177,42 +177,57 @@ const Hello = () => {
             noWrap
             component="div"
             sx={{ display: { xs: "none", sm: "block" } }}
-            color="primary"
+            style={{color: "black"}}
           >
             Snobella
           </Typography>
      
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Button sx={{ my: 2, color: "black", display: "block" }}>
-              <Link to="/">Products</Link>
-            </Button>
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
-              <Link to="/about">Home</Link>
-            </Button>
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
-              <Link to="/admin">AdminPanel</Link>
-            </Button>
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
-              <Link to="/user">UserPanel</Link>
-            </Button>
-          </Box>
+  <Button sx={{ my: 2, color: "black", display: "block" }}>
+    <Link to="/" style={{ color: "black", textDecoration: "none" }}>
+      Products
+    </Link>
+  </Button>
+  <Button sx={{ my: 2, color: "black", display: "block" }}>
+    <Link to="/about" style={{ color: "black", textDecoration: "none" }}>
+      Home
+    </Link>
+  </Button>
+  {existUser && existUser.isAdmin && (
+                  <Button sx={{ my: 2, color: "black", display: "block" }} >
+                    <Link to="/admin" style={{color:"black"}}>
+                  AdminPanel
+                     </Link>
+                  </Button>
+                )}
+
+  <Button sx={{ my: 2, color: "black", display: "block" }}>
+    <Link to="/user" style={{ color: "black", textDecoration: "none" }}>
+      UserPanel
+    </Link>
+  </Button>
+</Box>
+
 
           <Search>
             <SearchIconWrapper>
-              <SearchIcon color="primary"/>
+              <SearchIcon style={{color:"black"}}/>
             </SearchIconWrapper>
             <StyledInputBase
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
               onChange={(e) => handleSearch(e.target.value)}
+              
             />
           </Search>
+       
+            
 
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
           <IconButton
               size="small"
               aria-label="show 4 new mails"
-              color="primary"
+              style={{color:"black"}}
             >
              {existUser ? (existUser.username):null}
            
@@ -227,7 +242,7 @@ const Hello = () => {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <Person3Icon color="primary" />
+              <Person3Icon style={{color:"black"}} />
             </IconButton>
             <IconButton
               size="large"
@@ -238,7 +253,7 @@ const Hello = () => {
               }}
             >
               
-               <FavoriteIcon color="primary"/>
+               <FavoriteIcon style={{color:"black"}}/>
              
      
         
@@ -250,7 +265,7 @@ const Hello = () => {
             >
            <Link to={"/basket"}>
            <Badge badgeContent={totalCount} color="error">
-                <ShoppingCartIcon color="primary" />
+                <ShoppingCartIcon style={{color:"black"}} />
               </Badge>
            </Link>
             </IconButton>

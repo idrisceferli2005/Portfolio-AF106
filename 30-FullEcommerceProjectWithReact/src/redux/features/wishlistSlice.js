@@ -4,9 +4,14 @@ import axios from "axios";
 const baseUrl = "http://localhost:3000/users";
 
 export const getUser = createAsyncThunk("wishlist/getUser", async () => {
-  const { data } = await axios.get(baseUrl);
-  const existUser = data.find((user) => user.isLogin === true);
-  return existUser;
+  try {
+    const { data } = await axios.get(baseUrl);
+    const existUser = data.find((user) => user.isLogin === true);
+    return existUser || null;  // Əgər istifadəçi tapılmadısa null qaytar
+  } catch (error) {
+    console.error("Error fetching user:", error);
+    throw error;
+  }
 });
 
 export const updateWishlist = createAsyncThunk(

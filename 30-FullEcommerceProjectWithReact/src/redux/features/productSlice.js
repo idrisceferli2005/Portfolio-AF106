@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 const baseUrl = "http://localhost:3000/products";
-const usersBaseUrl = "http://localhost/3000/users";
+const usersBaseUrl = "http://localhost:3000/users";
 
 
 export const getUsers = createAsyncThunk("users/getUsers", async () => {

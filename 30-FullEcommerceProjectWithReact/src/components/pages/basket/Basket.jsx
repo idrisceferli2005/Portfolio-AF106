@@ -7,6 +7,19 @@ import styles from "./Basket.module.css"
 import { deleteAllBaket, deleteBasket, minusBtn, plusBtn } from "../../../redux/features/basketSlice";
 import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {
+  Box,
+  Grid,
+  Card,
+  CardMedia,
+  CardContent,
+  Typography,
+  Button,
+  IconButton,
+  TextField,
+  Container,
+} from "@mui/material";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 const Basket = () => {
   const navigate = useNavigate();
@@ -54,71 +67,95 @@ const Basket = () => {
           }
 
   return (
-    <>
-      <section className={styles.basketContainer}>
-      <div className="container">
-        <div className="row">
-          <div className={styles.basket}>
-            {products && products.length > 0 ? (
-              products.map((product) => (
-                <div className={styles.basketItem} key={product.id}>
-                  <div
-                    className={styles.image}
-                    onClick={() => navigate(`/productdetail/${product.id}`)}
-                  >
-                    <img src={product.image} alt="Product Image" />
-                  </div>
-                  <h6 className={styles.title}>
-                    {product.title
-                      ? product.title.slice(0, 10) + "..."
-                      : "Untitled"}
-                  </h6>
-                  <p className={styles.category}>{product.category}</p>
-                  <p className={styles.price}>
+    <Container>
+      <Typography variant="h4" sx={{ marginBottom: 4, fontWeight: "bold" }}>
+        Shopping Bag
+      </Typography>
+      <Grid container spacing={3}>
+        {products && products.length > 0 ? (
+          products.map((product) => (
+            <Grid item xs={12} sm={6} md={4} key={product.id}>
+              <Card sx={{ boxShadow: 3, borderRadius: 2 }}>
+                <CardMedia
+                  component="img"
+                  height="180"
+                  image={product.image}
+                  alt={product.title}
+                  sx={{ objectFit: "contain", padding: 2 }}
+                />
+                <CardContent>
+                  <Typography variant="h6" noWrap>
+                    {product.title || "Untitled"}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {product.category}
+                  </Typography>
+                  <Typography variant="h6" color="primary" sx={{ marginY: 1 }}>
                     ${(product.price * product.quantity).toFixed(2)}
-                  </p>
-                  <div className={styles.countArea}>
-                    <button
-                      className="minus-btn"
+                  </Typography>
+                  <Box display="flex" alignItems="center" gap={1}>
+                    <Button
+                      variant="contained"
+                      color="success"
+                      size="small"
                       onClick={() => handlePlus(product)}
                     >
                       +
-                    </button>
-                    <p className={styles.count}>{product.quantity}</p>
-                    <button
-                      className="plus-btn"
+                    </Button>
+                    <Typography variant="body1">{product.quantity}</Typography>
+                    <Button
+                      variant="contained"
+                      color="error"
+                      size="small"
                       onClick={() => handleMinus(product)}
                     >
                       -
-                    </button>
-                  </div>
-                  <button
-                    className={`btn btn-danger ${styles.removeBtn}`}
+                    </Button>
+                  </Box>
+                  <IconButton
+                    aria-label="delete"
+                    color="error"
                     onClick={() => handleDeleteBasket(product)}
+                    sx={{ marginTop: 2 }}
                   >
-                    Remove
-                  </button>
-                </div>
-              ))
-            ) : (
-              <p className={styles.empty}>
-                Your basket is empty. Add some products to get started!
-              </p>
-            )}
-          </div>
-          <button className={`btn btn-danger ${styles.removeBtn}`} onClick={handleDeleteAllBasket}>Delete All</button>
-          <div className={styles.bottom}>
-            <Link to={"/"} className={styles.link}>
-              Back
-            </Link>
-            <h4>
-              Total: <span className={styles.totalPrice}>${totalAmount.toFixed(2)}</span>
-            </h4>
-          </div>
-        </div>
-      </div>
-    </section>
-    </>
+                    <DeleteIcon />
+                  </IconButton>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))
+        ) : (
+          <Typography variant="h6" color="text.secondary">
+            Your basket is empty. Add some products to get started!
+          </Typography>
+        )}
+      </Grid>
+
+
+      <Box sx={{ marginTop: 4, textAlign: "right" }}>
+        <Typography variant="h6" color="primary">
+          Total: ${totalAmount.toFixed(2)}
+        </Typography>
+        <TextField
+          variant="outlined"
+          label="Discount Code"
+          size="small"
+          sx={{ marginY: 2, width: "30%" }}
+        />
+        <Button variant="contained" color="secondary" sx={{ marginLeft: 2 }}>
+          Apply
+        </Button>
+        <Box sx={{ marginTop: 2 }}>
+          <Button
+            variant="contained"
+            color="error"
+            onClick={handleDeleteAllBasket}
+          >
+            Delete All
+          </Button>
+        </Box>
+      </Box>
+    </Container>
   );
 };
 
