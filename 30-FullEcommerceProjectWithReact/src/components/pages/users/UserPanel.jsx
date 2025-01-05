@@ -9,7 +9,7 @@ import { deleteUser, getUsers } from "../../../redux/features/productSlice";
 const UserPanel = () => {
   const dispatch = useDispatch();
   const { users } = useSelector((state) => state.wishlist); 
-  console.log(users)// Ensure the correct state slice is used
+  console.log(users)
 
   const [open, setOpen] = useState(false);
   const [formData, setFormData] = useState({

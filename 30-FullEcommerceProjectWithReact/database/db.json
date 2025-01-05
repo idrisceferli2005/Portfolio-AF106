@@ -8,9 +8,22 @@
       "email": "idris2005@gmail.com",
       "password": "Ceferli2005#",
       "confirmpassword": "Ceferli2005#",
-      "isLogin": false,
+      "isLogin": true,
       "isAdmin": true,
-      "wishlist": [],
+      "wishlist": [
+        {
+          "id": "6",
+          "title": "Solid Gold Petite Micropave ",
+          "price": 168,
+          "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+          "category": "jewelery",
+          "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+          "rating": {
+            "rate": 3.9,
+            "count": 70
+          }
+        }
+      ],
       "basket": [],
       "gender": "other"
     },
@@ -22,7 +35,7 @@
       "email": "DWCJKWDJCB@wdcne.com",
       "password": "Ceferli2005#",
       "confirmpassword": "Ceferli2005#",
-      "isLogin": true,
+      "isLogin": false,
       "isAdmin": false,
       "wishlist": [
         {
@@ -281,6 +294,14 @@
         "rate": 3.6,
         "count": 145
       }
+    },
+    {
+      "id": "ddec",
+      "image": "https://picsum.photos/200/300",
+      "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+      "category": "jewelery",
+      "description": "wqdqwdwqd",
+      "price": "695"
     }
   ]
 }

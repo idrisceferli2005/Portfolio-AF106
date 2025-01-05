@@ -6,13 +6,13 @@ import Layout from "./components/layout/Layout";
 import Home from "./components/pages/Home";
 import Login from "./components/pages/auth/login/Login";
 import Register from "./components/pages/auth/register/Register";
-import NotFoundPage from "./components/pages/auth/NotFoundPage";
 import Wishlist from "./components/pages/wishlist/Wishlist";
 import Basket from "./components/pages/basket/Basket";
 import ProductDeteil from "./components/pages/productdetail/ProductDeteil";
 import AdminPanel from "./components/pages/admin/AdminPanel";
 import About from "./components/pages/admin/home/About";
 import UserPanel from "./components/pages/users/UserPanel";
+import NotFoundPage from "./components/pages/auth/notfound/NotFoundPage";
 const router = createBrowserRouter([
   {
     path: "/",
