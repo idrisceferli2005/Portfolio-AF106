@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './Productour.module.css'
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { fetchProducts } from '../../redux/features/productSlice';
 
 const Productour = () => {
+
+  const dispatch = useDispatch();
+  const navigate =useNavigate();
+  const { products } = useSelector((state) => state.products);
+  console.log(products)
+
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch]);
   return (
  <div>
     <div className={styles.ourProducts}>
@@ -16,114 +28,23 @@ const Productour = () => {
 
       <div className={styles.cards}>
         <div className="row">
-          <div className="col-4">
-            <div className={styles.card}>
-              <div className={styles.image}>
-                <img className={styles.womens}
-                  src="https://preview.colorlib.com/theme/selling/images/model_1_bg.jpg"
-                  alt="image"
-                />
-              </div>
-              <div className={styles.cardtext}>
-                <h4>Wild West Hoodie</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur <br /> adipisicing.
-                </p>
-                <button className="btn btn-outline-dark">Cart</button>
-                <button className="btn btn-light">View</button>
-              </div>
-            </div>
+          <div className="d-flex justify-content-between gap-3 flex-wrap align-center">
+          {
+            products && products.length > 0 ? (
+                products.map((product) => (
+                    <div key={product._id}>
+                      <img className={styles.womens} src={product.image} alt="" />
+                        <h2>{product.name}</h2>
+                        <p>{product.category}</p>
+                        <span>{product.price}</span>
+                        </div>
+                ))
+            ) : (
+                <p>No products found</p>
+            )
+        }
           </div>
-          <div className="col-4">
-            <div className={styles.card}>
-              <div className={styles.image}>
-                <img className={styles.womens}
-                  src="https://preview.colorlib.com/theme/selling/images/model_1_bg.jpg"
-                  alt="image"
-                />
-              </div>
-              <div className={styles.cardtext}>
-                <h4>Wild West Hoodie</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur <br /> adipisicing.
-                </p>
-                <button className="btn btn-outline-dark">Cart</button>
-                <button className="btn btn-light">View</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-4">
-            <div className={styles.card}>
-              <div className={styles.image}>
-                <img className={styles.womens}
-                  src="https://preview.colorlib.com/theme/selling/images/model_1_bg.jpg"
-                  alt="image"
-                />
-              </div>
-              <div className={styles.cardtext}>
-                <h4>Wild West Hoodie</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur <br /> adipisicing.
-                </p>
-                <button className="btn btn-outline-dark">Cart</button>
-                <button className="btn btn-light">View</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-4">
-            <div className={styles.card}>
-              <div className={styles.image}>
-                <img className={styles.womens}
-                  src="https://preview.colorlib.com/theme/selling/images/model_1_bg.jpg"
-                  alt="image"
-                />
-              </div>
-              <div className={styles.cardtext}>
-                <h4>Wild West Hoodie</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur <br /> adipisicing.
-                </p>
-                <button className="btn btn-outline-dark">Cart</button>
-                <button className="btn btn-light">View</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-4">
-            <div className={styles.card}>
-              <div className={styles.image}>
-                <img className={styles.womens}
-                  src="https://preview.colorlib.com/theme/selling/images/model_1_bg.jpg"
-                  alt="image"
-                />
-              </div>
-              <div className={styles.cardtext}>
-                <h4>Wild West Hoodie</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur <br /> adipisicing.
-                </p>
-                <button className="btn btn-outline-dark">Cart</button>
-                <button className="btn btn-light">View</button>
-              </div>
-            </div>
-          </div>
-          <div className="col-4">
-            <div className={styles.card}>
-              <div className={styles.image}>
-                <img className={styles.womens}
-                  src="https://preview.colorlib.com/theme/selling/images/model_1_bg.jpg"
-                  alt="image"
-                />
-              </div>
-              <div className={styles.cardtext}>
-                <h4>Wild West Hoodie</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur <br /> adipisicing.
-                </p>
-                <button className="btn btn-outline-dark">Cart</button>
-                <button className="btn btn-light">View</button>
-              </div>
-            </div>
-          </div>
+   
         </div>
       </div>
  </div>
