@@ -1,0 +1,22 @@
+.shop{
+    text-align: center;
+    background-image: url(https://preview.colorlib.com/theme/selling/images/hero_2.jpg);
+    height: 700px;
+    padding: 300px;
+    padding-right: 900px;
+    object-fit: cover;
+
+}
+.with{
+    color: white;
+    font-size: 3rem;
+}
+.lorem{
+    color: white;
+}
+
+.heroes{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}

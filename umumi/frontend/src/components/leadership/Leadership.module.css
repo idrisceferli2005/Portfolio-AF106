@@ -1,0 +1,26 @@
+.persons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.men{
+    width: 400px;
+}
+

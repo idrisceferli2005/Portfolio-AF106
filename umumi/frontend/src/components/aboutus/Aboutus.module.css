@@ -1,0 +1,38 @@
+.about{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.photo{
+    width: 100%;
+    height: 700px;
+}
+
+.merchant{
+    color: #adb5bd;
+}
+
+.us{
+    font-size: 3rem;
+}
+
+.trusted{
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    color: white;
+    background-color: #46ddb0;
+    width: 300px;
+    height: 100px;
+ 
+}
+
+.imag{
+    position: relative;
+}
+.trusted{
+    font-size: 2rem;
+}
