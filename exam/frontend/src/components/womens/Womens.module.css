@@ -1,0 +1,17 @@
+.cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.card{
+    position: relative;
+}
+
+.text{
+    position: absolute;
+bottom: 110px;
+left: 120px;
+background-color: white;
+}

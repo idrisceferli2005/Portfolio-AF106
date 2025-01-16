@@ -1,0 +1,12 @@
+.blogs{
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
