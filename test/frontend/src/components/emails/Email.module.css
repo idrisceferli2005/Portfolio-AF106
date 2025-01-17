@@ -1,0 +1,11 @@
+.emails{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+
+.photos{
+    background: url(https://preview.colorlib.com/theme/estore/assets/img/collection/latest-offer.png.webp);
+    padding: 50px 0;
+}

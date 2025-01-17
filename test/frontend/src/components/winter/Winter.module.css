@@ -1,0 +1,17 @@
+.container{
+    background: url(https://preview.colorlib.com/theme/estore/assets/img/hero/h1_hero.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.wintertitle{
+    font-size: 40px;
+  text-align: center;
+margin-top: 300px;
+}
+
+.winter {
+    display: flex;
+}
+
